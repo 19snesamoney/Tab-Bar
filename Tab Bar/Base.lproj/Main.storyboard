@@ -66,7 +66,7 @@
         <scene sceneID="3aE-MG-Ipt">
             <objects>
                 <viewController id="Y3c-44-azd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sj6-9C-Egl">
+                    <view key="view" contentMode="scaleToFill" id="sj6-9C-Egl" customClass="Alerts">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJR-RV-5P2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-1001"/>
+            <point key="canvasLocation" x="814" y="-1003"/>
         </scene>
         <!--Meetings-->
         <scene sceneID="hNz-n2-bh7">

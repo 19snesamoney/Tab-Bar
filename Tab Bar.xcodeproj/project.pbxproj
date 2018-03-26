@@ -16,6 +16,8 @@
 		7463ECCF20642A5B00F314F9 /* Tab_BarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECCE20642A5B00F314F9 /* Tab_BarTests.swift */; };
 		7463ECDA20642A5B00F314F9 /* Tab_BarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECD920642A5B00F314F9 /* Tab_BarUITests.swift */; };
 		74B8EBD42069546C00C5E31E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 74B8EBD32069546C00C5E31E /* .gitignore */; };
+		74B8EBD6206957B300C5E31E /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8EBD5206957B300C5E31E /* AlertsViewController.swift */; };
+		74B8EBD8206957D000C5E31E /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8EBD7206957D000C5E31E /* FeedbackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		7463ECD920642A5B00F314F9 /* Tab_BarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab_BarUITests.swift; sourceTree = "<group>"; };
 		7463ECDB20642A5B00F314F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B8EBD32069546C00C5E31E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		74B8EBD5206957B300C5E31E /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
+		74B8EBD7206957D000C5E31E /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				7463ECB720642A5B00F314F9 /* AppDelegate.swift */,
 				7463ECB920642A5B00F314F9 /* FirstViewController.swift */,
 				7463ECBB20642A5B00F314F9 /* SecondViewController.swift */,
+				74B8EBD5206957B300C5E31E /* AlertsViewController.swift */,
+				74B8EBD7206957D000C5E31E /* FeedbackViewController.swift */,
 				7463ECBD20642A5B00F314F9 /* Main.storyboard */,
 				7463ECC020642A5B00F314F9 /* Assets.xcassets */,
 				7463ECC220642A5B00F314F9 /* LaunchScreen.storyboard */,
@@ -269,6 +275,8 @@
 				7463ECBC20642A5B00F314F9 /* SecondViewController.swift in Sources */,
 				7463ECB820642A5B00F314F9 /* AppDelegate.swift in Sources */,
 				7463ECBA20642A5B00F314F9 /* FirstViewController.swift in Sources */,
+				74B8EBD8206957D000C5E31E /* FeedbackViewController.swift in Sources */,
+				74B8EBD6206957B300C5E31E /* AlertsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
