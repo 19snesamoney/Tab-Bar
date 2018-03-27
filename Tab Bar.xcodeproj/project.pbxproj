@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D287C0A206ACA2D00A1E499 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D287C09206ACA2D00A1E499 /* DateViewController.swift */; };
 		7463ECB820642A5B00F314F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECB720642A5B00F314F9 /* AppDelegate.swift */; };
 		7463ECBA20642A5B00F314F9 /* MeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECB920642A5B00F314F9 /* MeetingViewController.swift */; };
 		7463ECBC20642A5B00F314F9 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECBB20642A5B00F314F9 /* GoalsViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D287C09206ACA2D00A1E499 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		7463ECB420642A5B00F314F9 /* Tab Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tab Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7463ECB720642A5B00F314F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7463ECB920642A5B00F314F9 /* MeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				7463ECBB20642A5B00F314F9 /* SecondViewController.swift */,
 				74B8EBD920695D7100C5E31E /* AlertsViewController.swift */,
 				7463ECBD20642A5B00F314F9 /* Main.storyboard */,
+				1D287C09206ACA2D00A1E499 /* DateViewController.swift */,
 				7463ECC020642A5B00F314F9 /* Assets.xcassets */,
 				7463ECC220642A5B00F314F9 /* LaunchScreen.storyboard */,
 				7463ECC520642A5B00F314F9 /* Info.plist */,
@@ -271,8 +274,10 @@
 			files = (
 				7463ECBC20642A5B00F314F9 /* GoalsViewController.swift in Sources */,
 				7463ECB820642A5B00F314F9 /* AppDelegate.swift in Sources */,
-				7463ECBA20642A5B00F314F9 /* FirstViewController.swift in Sources */,
-				74B8EBDA20695D7100C5E31E /* AlertsViewController.swift in Sources */,
+				7463ECBA20642A5B00F314F9 /* MeetingViewController.swift in Sources */,
+				74B8EBD8206957D000C5E31E /* FeedbackViewController.swift in Sources */,
+				1D287C0A206ACA2D00A1E499 /* DateViewController.swift in Sources */,
+				74B8EBD6206957B300C5E31E /* AlertsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
