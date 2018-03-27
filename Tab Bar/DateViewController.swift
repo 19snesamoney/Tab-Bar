@@ -17,7 +17,7 @@ class DateViewController: UIViewController {
         let currentDate = Date()
         let oneDay = 24 * 60 * 60
         let minDate = currentDate.addingTimeInterval(TimeInterval(0 * oneDay)) // before 10 days from now
-       
+       //min date
         datePicker.minimumDate = minDate
         
     }
