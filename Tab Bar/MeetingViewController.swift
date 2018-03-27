@@ -1,14 +1,13 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  Tab Bar
 //
 //  Created by Sophia Nesamoney on 3/22/18.
 //  Copyright © 2018 Sophia Nesamoney. All rights reserved.
-//
-
+// This is Madeline!
 import UIKit
 
-class SecondViewController: UIViewController {
+class MeetingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +18,8 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    // sreya IS HERE
+    // Hi sreya!
 
 }
 
