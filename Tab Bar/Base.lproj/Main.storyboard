@@ -66,7 +66,7 @@
         <scene sceneID="3aE-MG-Ipt">
             <objects>
                 <viewController id="Y3c-44-azd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sj6-9C-Egl" customClass="Alerts">
+                    <view key="view" contentMode="scaleToFill" id="sj6-9C-Egl" customClass="AlertsView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
