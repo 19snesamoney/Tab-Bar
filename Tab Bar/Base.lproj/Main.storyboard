@@ -13,7 +13,7 @@
         <!--Feedback-->
         <scene sceneID="Bep-eR-RrT">
             <objects>
-                <viewController id="aoR-Ju-h0P" sceneMemberID="viewController">
+                <viewController id="aoR-Ju-h0P" customClass="FeedbackViewController" customModule="Tab_Bar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xUp-Pl-h2X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,8 +65,8 @@
         <!--Alerts-->
         <scene sceneID="3aE-MG-Ipt">
             <objects>
-                <viewController id="Y3c-44-azd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sj6-9C-Egl" customClass="AlertsView">
+                <viewController id="Y3c-44-azd" customClass="AlertsViewController" customModule="Tab_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sj6-9C-Egl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -91,7 +91,7 @@
         <!--Meetings-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Tab_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="MeetingViewController" customModule="Tab_Bar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,7 +120,7 @@
         <!--Goals-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Tab_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="GoalsViewController" customModule="Tab_Bar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
