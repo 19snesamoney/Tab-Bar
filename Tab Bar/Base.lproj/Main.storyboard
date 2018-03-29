@@ -41,32 +41,6 @@
             </objects>
             <point key="canvasLocation" x="-895" y="-1003"/>
         </scene>
-        <!--Tutors-->
-        <scene sceneID="DFE-Gf-6ww">
-            <objects>
-                <viewController id="B0b-OR-0TN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dGY-Ik-aBZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Tutors" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Hj-2l-T3x">
-                                <rect key="frame" x="139" y="312" width="96" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="ylE-3q-BM9"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Tutors" image="Tutors" id="E6R-QN-eOV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WD6-qM-QfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-82" y="-1002"/>
-        </scene>
         <!--Alerts-->
         <scene sceneID="3aE-MG-Ipt">
             <objects>
@@ -315,7 +289,6 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="Y3c-44-azd" kind="relationship" relationship="viewControllers" id="7o8-2H-F70"/>
-                        <segue destination="B0b-OR-0TN" kind="relationship" relationship="viewControllers" id="txy-zN-KUT"/>
                         <segue destination="BB0-DB-H6x" kind="relationship" relationship="viewControllers" id="HIY-Bd-ih2"/>
                         <segue destination="aoR-Ju-h0P" kind="relationship" relationship="viewControllers" id="0QC-2T-Hne"/>
                     </connections>
@@ -330,6 +303,5 @@
         <image name="Feedback" width="37" height="39"/>
         <image name="Goals" width="37" height="36"/>
         <image name="Meetings" width="37" height="43"/>
-        <image name="Tutors" width="37" height="45"/>
     </resources>
 </document>
