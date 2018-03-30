@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D287C0A206ACA2D00A1E499 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D287C09206ACA2D00A1E499 /* DateViewController.swift */; };
+		27F19E0C206EB33B00562388 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F19E0B206EB33B00562388 /* AddTaskViewController.swift */; };
 		7463ECB820642A5B00F314F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECB720642A5B00F314F9 /* AppDelegate.swift */; };
 		7463ECBA20642A5B00F314F9 /* MeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECB920642A5B00F314F9 /* MeetingViewController.swift */; };
 		7463ECBC20642A5B00F314F9 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECBB20642A5B00F314F9 /* GoalsViewController.swift */; };
@@ -17,7 +18,6 @@
 		7463ECCF20642A5B00F314F9 /* Tab_BarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECCE20642A5B00F314F9 /* Tab_BarTests.swift */; };
 		7463ECDA20642A5B00F314F9 /* Tab_BarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECD920642A5B00F314F9 /* Tab_BarUITests.swift */; };
 		74B8EBD42069546C00C5E31E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 74B8EBD32069546C00C5E31E /* .gitignore */; };
-		74B8EBDA20695D7100C5E31E /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8EBD920695D7100C5E31E /* AlertsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		1D287C09206ACA2D00A1E499 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		27F19E0B206EB33B00562388 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		7463ECB420642A5B00F314F9 /* Tab Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tab Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7463ECB720642A5B00F314F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7463ECB920642A5B00F314F9 /* MeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingViewController.swift; sourceTree = "<group>"; };
@@ -107,8 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				7463ECB720642A5B00F314F9 /* AppDelegate.swift */,
-				7463ECB920642A5B00F314F9 /* FirstViewController.swift */,
-				7463ECBB20642A5B00F314F9 /* SecondViewController.swift */,
+				7463ECB920642A5B00F314F9 /* MeetingViewController.swift */,
+				7463ECBB20642A5B00F314F9 /* GoalsViewController.swift */,
+				27F19E0B206EB33B00562388 /* AddTaskViewController.swift */,
 				74B8EBD920695D7100C5E31E /* AlertsViewController.swift */,
 				7463ECBD20642A5B00F314F9 /* Main.storyboard */,
 				1D287C09206ACA2D00A1E499 /* DateViewController.swift */,
@@ -275,9 +277,8 @@
 				7463ECBC20642A5B00F314F9 /* GoalsViewController.swift in Sources */,
 				7463ECB820642A5B00F314F9 /* AppDelegate.swift in Sources */,
 				7463ECBA20642A5B00F314F9 /* MeetingViewController.swift in Sources */,
-				74B8EBD8206957D000C5E31E /* FeedbackViewController.swift in Sources */,
 				1D287C0A206ACA2D00A1E499 /* DateViewController.swift in Sources */,
-				74B8EBD6206957B300C5E31E /* AlertsViewController.swift in Sources */,
+				27F19E0C206EB33B00562388 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
