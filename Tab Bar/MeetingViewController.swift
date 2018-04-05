@@ -8,12 +8,20 @@
 import UIKit
 
 class MeetingViewController: UIViewController {
+    var time = TimeCalc()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dateViewController = segue.destination as? DateViewController {
+            dateViewController.time = self.time
+        }
+        
+    }
+        
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -21,5 +29,8 @@ class MeetingViewController: UIViewController {
     // sreya IS HERE
     // Hi sreya!
 
+    
+    
 }
+
 

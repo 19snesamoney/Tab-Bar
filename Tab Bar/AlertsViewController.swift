@@ -9,7 +9,9 @@
 import UIKit
 
 class AlertsViewController: UIViewController {
-
+    
+    var time: TimeCalc!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -9,30 +9,34 @@
 import UIKit
 
 class DateViewController: UIViewController {
-    var time = timeCalc()
 
     var datePicker = UIDatePicker()
-    
-    
+    var time: TimeCalc!
+    @IBOutlet weak var meetingPicker: UIDatePicker!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var meetingPicker: UIDatePicker!
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let alertsViewController = segue.destination as? AlertsViewController {
+            alertsViewController.time = self.time
+        }
+        
+    }
+    
     @IBAction func meetingAction(_ sender: Any) {
         var dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
         var StringDate = dateFormatter.string(from: datePicker.date)
-        time.calculateMonth(StringMonth: StringDate)
+        print (time.calculateMonth(StringMonth: StringDate))
+        
         
     }
     
