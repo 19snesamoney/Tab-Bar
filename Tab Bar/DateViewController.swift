@@ -9,21 +9,13 @@
 import UIKit
 
 class DateViewController: UIViewController {
+    var time = timeCalc()
+
     var datePicker = UIDatePicker()
     
-    func adddatePicker() {
-        datePicker.addTarget(self, action: #selector(datePickerChanged(datePicker:)), for: .valueChanged)
-        
-        let currentDate = Date()
-        let oneDay = 24 * 60 * 60
-        let minDate = currentDate.addingTimeInterval(TimeInterval(0 * oneDay)) // before 10 days from now
-       //min date
-        datePicker.minimumDate = minDate
-        
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        adddatePicker()
 
         
         // Do any additional setup after loading the view.
@@ -33,23 +25,18 @@ class DateViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    enum UIDatePickerMode : Int {
-        
-        case time
-        
-        case date
-        
-        case dateAndTime
-        
-        case countDownTimer
-    }
-    
-    @objc func datePickerChanged(datePicker: UIDatePicker){
-        print("date = \(datePicker.date)")
-    }
     
     @IBOutlet weak var meetingPicker: UIDatePicker!
 
     @IBAction func meetingAction(_ sender: Any) {
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        var StringDate = dateFormatter.string(from: datePicker.date)
+        time.calculateMonth(StringMonth: StringDate)
+        
+    }
+    
+        
+        //
 }
-}
+
