@@ -41,7 +41,7 @@
             </objects>
             <point key="canvasLocation" x="-895" y="-1003"/>
         </scene>
-        <!--Alerts-->
+        <!--Alerts View Controller-->
         <scene sceneID="3aE-MG-Ipt">
             <objects>
                 <viewController id="Y3c-44-azd" customClass="AlertsViewController" customModule="Tab_Bar" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,6 +76,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nXy-1o-e7z">
                                 <rect key="frame" x="301" y="509" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="fiveMinAction:" destination="Y3c-44-azd" eventType="valueChanged" id="b1W-bZ-RKk"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 days before" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeH-Vi-gT0">
                                 <rect key="frame" x="30" y="124" width="230" height="41"/>
@@ -116,11 +119,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="hZn-O6-q5S"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Alerts" image="Alerts" id="tem-wd-ALE"/>
+                    <navigationItem key="navigationItem" id="4Wv-Te-suL"/>
+                    <connections>
+                        <outlet property="fiveMinOutlet" destination="nXy-1o-e7z" id="ne7-RT-GRC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJR-RV-5P2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813.60000000000002" y="-1003.4482758620691"/>
+            <point key="canvasLocation" x="2004" y="-1003"/>
         </scene>
         <!--Meetings-->
         <scene sceneID="hNz-n2-bh7">
@@ -191,7 +197,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Set Alerts"/>
                                 <connections>
-                                    <segue destination="Y3c-44-azd" kind="presentation" id="Shw-jA-ZGO"/>
+                                    <segue destination="NqF-59-yxP" kind="presentation" id="Shw-jA-ZGO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -205,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DqE-Zb-ZiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3120.8000000000002" y="-765.06746626686663"/>
+            <point key="canvasLocation" x="3460" y="-765.06746626686663"/>
         </scene>
         <!--Goals-->
         <scene sceneID="wg7-f3-ORb">
@@ -353,7 +359,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="Y3c-44-azd" kind="relationship" relationship="viewControllers" id="7o8-2H-F70"/>
+                        <segue destination="NqF-59-yxP" kind="relationship" relationship="viewControllers" id="7o8-2H-F70"/>
                         <segue destination="BB0-DB-H6x" kind="relationship" relationship="viewControllers" id="HIY-Bd-ih2"/>
                         <segue destination="aoR-Ju-h0P" kind="relationship" relationship="viewControllers" id="0QC-2T-Hne"/>
                     </connections>
@@ -379,6 +385,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWg-BD-MrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1903" y="-215"/>
+        </scene>
+        <!--Alerts-->
+        <scene sceneID="fcZ-oE-QnP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NqF-59-yxP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Alerts" image="Alerts" id="tem-wd-ALE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hbp-9O-bBP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y3c-44-azd" kind="relationship" relationship="rootViewController" id="bKw-Kw-4mM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEN-0b-P16" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812.79999999999995" y="-1003.8980509745128"/>
         </scene>
     </scenes>
     <resources>

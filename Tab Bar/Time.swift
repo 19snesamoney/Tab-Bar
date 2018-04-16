@@ -9,7 +9,10 @@
 import Foundation
 
 class TimeCalc {
-    
+    var stringDate = ""
+    init() {
+        
+    }
     func calculateMonth(StringMonth: String) ->  String{
         print (StringMonth)
         let newString = String(StringMonth.dropLast(10))

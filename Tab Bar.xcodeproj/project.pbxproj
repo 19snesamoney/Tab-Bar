@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D287C0A206ACA2D00A1E499 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D287C09206ACA2D00A1E499 /* DateViewController.swift */; };
 		1D287C102073D14C00A1E499 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D287C0F2073D14C00A1E499 /* Time.swift */; };
+		1D287C112076A3CF00A1E499 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8EBD920695D7100C5E31E /* AlertsViewController.swift */; };
 		27F19E0C206EB33B00562388 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F19E0B206EB33B00562388 /* AddTaskViewController.swift */; };
 		7463ECB820642A5B00F314F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECB720642A5B00F314F9 /* AppDelegate.swift */; };
 		7463ECBA20642A5B00F314F9 /* MeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECB920642A5B00F314F9 /* MeetingViewController.swift */; };
@@ -277,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D287C112076A3CF00A1E499 /* AlertsViewController.swift in Sources */,
 				1D287C102073D14C00A1E499 /* Time.swift in Sources */,
 				7463ECBC20642A5B00F314F9 /* GoalsViewController.swift in Sources */,
 				7463ECB820642A5B00F314F9 /* AppDelegate.swift in Sources */,

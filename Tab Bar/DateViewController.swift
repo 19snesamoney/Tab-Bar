@@ -32,10 +32,22 @@ class DateViewController: UIViewController {
     }
     
     @IBAction func meetingAction(_ sender: Any) {
-        var dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
-        var StringDate = dateFormatter.string(from: datePicker.date)
-        print (time.calculateMonth(StringMonth: StringDate))
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd"
+        var day: String = dateFormatter.string(from: self.datePicker.date)
+        var intDay = Int(day)
+        dateFormatter.dateFormat = "MM"
+        let month: String = dateFormatter.string(from: self.datePicker.date)
+        var IntMonth = Int(month)
+        dateFormatter.dateFormat = "hh"
+        let hour: String = dateFormatter.string(from: self.datePicker.date)
+        var IntHour = Int(hour)
+        dateFormatter.dateFormat = "mm"
+        let minute: String = dateFormatter.string(from: self.datePicker.date)
+        var IntMinute = Int(minute)
+        print (IntMinute)
+
+       // var StringDate = dateFormatter.string(from: datePicker.date)
         
         
     }
