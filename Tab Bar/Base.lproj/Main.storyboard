@@ -196,9 +196,6 @@
                                 <rect key="frame" x="153" y="600" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Set Alerts"/>
-                                <connections>
-                                    <segue destination="NqF-59-yxP" kind="presentation" id="Shw-jA-ZGO"/>
-                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7n-Kz-EaR">
                                 <rect key="frame" x="291" y="90" width="49" height="31"/>
@@ -467,7 +464,4 @@
         <image name="Goals" width="37" height="36"/>
         <image name="Meetings" width="37" height="43"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Shw-jA-ZGO"/>
-    </inferredMetricsTieBreakers>
 </document>

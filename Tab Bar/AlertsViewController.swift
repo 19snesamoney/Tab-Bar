@@ -34,7 +34,7 @@ class AlertsViewController: UIViewController {
     
     // save button
     @IBOutlet weak var fiveMinOutlet: UISwitch!
-    // put save in navigation bar 
+    // put save in navigation bar
     @IBAction func fiveMinAction(_ sender: UISwitch) {
         if isGrantedNotificationAccess && fiveMinOutlet.isOn {
             let content = UNMutableNotificationContent()
