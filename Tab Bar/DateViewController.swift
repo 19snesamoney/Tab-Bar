@@ -24,17 +24,21 @@ class DateViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let alertsViewController = segue.destination as? AlertsViewController {
-            alertsViewController.time = self.time
-        }
-        
-    }
+    @IBOutlet weak var twoDays: UISwitch!
+    
+    @IBOutlet weak var oneDay: UISwitch!
+    
+    @IBOutlet weak var oneHour: UISwitch!
+    
+    @IBOutlet weak var thirtyMins: UISwitch!
+    
+    @IBOutlet weak var fiveMins: UISwitch!
+    
     
     @IBAction func meetingAction(_ sender: Any) {
         let dateFormatter = DateFormatter()
         let meetingTime = meetingPicker.date
-        meetingTime.timeIntervalSinceNow 
+        var meetingTimeCurrent = meetingTime.timeIntervalSinceNow
         
        
 
@@ -43,7 +47,12 @@ class DateViewController: UIViewController {
         
     }
     
+    @IBAction func setAlerts(_ sender: UIButton) {
+        timer = Timer.scheduledTimer(timeInterval: meetingTimeCurrent, target: self, selector: #selector(enableSubmitButton), userInfo: nil, repeats: false)
         
+    }
+    }
+    
         //
-}
+
 
