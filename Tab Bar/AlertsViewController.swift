@@ -12,7 +12,7 @@ import UserNotifications
 
 class AlertsViewController: UIViewController {
     
-    var time: TimeCalc!
+    var time = Date()
     var isGrantedNotificationAccess = false
 
     override func viewDidLoad() {
@@ -32,8 +32,9 @@ class AlertsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // save button
     @IBOutlet weak var fiveMinOutlet: UISwitch!
-    
+    // put save in navigation bar 
     @IBAction func fiveMinAction(_ sender: UISwitch) {
         if isGrantedNotificationAccess && fiveMinOutlet.isOn {
             let content = UNMutableNotificationContent()

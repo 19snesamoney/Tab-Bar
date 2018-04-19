@@ -11,7 +11,7 @@ import UIKit
 class DateViewController: UIViewController {
 
     var datePicker = UIDatePicker()
-    var time: TimeCalc!
+    var time = Date()
     @IBOutlet weak var meetingPicker: UIDatePicker!
 
     override func viewDidLoad() {
@@ -33,19 +33,10 @@ class DateViewController: UIViewController {
     
     @IBAction func meetingAction(_ sender: Any) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd"
-        var day: String = dateFormatter.string(from: self.datePicker.date)
-        var intDay = Int(day)
-        dateFormatter.dateFormat = "MM"
-        let month: String = dateFormatter.string(from: self.datePicker.date)
-        var IntMonth = Int(month)
-        dateFormatter.dateFormat = "hh"
-        let hour: String = dateFormatter.string(from: self.datePicker.date)
-        var IntHour = Int(hour)
-        dateFormatter.dateFormat = "mm"
-        let minute: String = dateFormatter.string(from: self.datePicker.date)
-        var IntMinute = Int(minute)
-        print (IntMinute)
+        let meetingTime = meetingPicker.date
+        meetingTime.timeIntervalSinceNow 
+        
+       
 
        // var StringDate = dateFormatter.string(from: datePicker.date)
         
