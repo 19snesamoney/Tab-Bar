@@ -33,7 +33,8 @@ class GoalsViewController: UIViewController, UITableViewDataSource {
         let item = toDoList[sourceIndexPath.row]
         toDoList.remove(at: sourceIndexPath.row)
         toDoList.insert(item, at: destinationIndexPath.row)
-        
+        let defaults = UserDefaults.standard
+        defaults.set(toDoList, forKey: "TutoringAppToDoList")
     }
     
     //Delete function
@@ -41,12 +42,16 @@ class GoalsViewController: UIViewController, UITableViewDataSource {
         if editingStyle == UITableViewCellEditingStyle.delete {
             toDoList.remove(at: indexPath.row)
             tableView.reloadData()
+            let defaults = UserDefaults.standard
+            defaults.set(toDoList, forKey: "TutoringAppToDoList")
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        let defaults = UserDefaults.standard
+        toDoList = defaults.object(forKey: "TutoringAppToDoList") as? [String] ?? [String]()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -61,6 +66,9 @@ class GoalsViewController: UIViewController, UITableViewDataSource {
         if let addTaskVC = unwindSegue.source as? AddTaskViewController {
             if addTaskVC.newTask.count != 0 {
                 toDoList.append(addTaskVC.newTask)
+                let defaults = UserDefaults.standard
+                defaults.set(toDoList, forKey: "TutoringAppToDoList")
+                
             }
         }
     }

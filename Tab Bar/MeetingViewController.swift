@@ -16,7 +16,7 @@ class MeetingViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let dateViewController = segue.destination.childViewControllers.first as? DateViewController {
-            dateViewController.time = self.time
+            //dateViewController.time = self.time
         }
         
     }
