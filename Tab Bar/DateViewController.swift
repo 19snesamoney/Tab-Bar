@@ -29,15 +29,13 @@ class DateViewController: UIViewController {
     
     @IBOutlet weak var oneHour: UISwitch!
     
-    @IBOutlet weak var thirtyMins: UISwitch!
-    
-    @IBOutlet weak var fiveMins: UISwitch!
-    
-    
-     //   let dateFormatter = DateFormatter()
-       // let meetingTime = meetingPicker.date
- //       var meetingTimeCurrent = meetingTime.timeIntervalSinceNow
-        
+    @IBAction func meetingAction(_ sender: Any) {
+        let dateFormatter = DateFormatter()
+        let meetingTime = meetingPicker.date
+        meetingTime.timeIntervalSinceNow
+
+        let defaults = UserDefaults.standard
+        let meeting = defaults.integer(forKey: "meetingTime")
        
 
        // var StringDate = dateFormatter.string(from: datePicker.date)
