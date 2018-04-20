@@ -54,7 +54,15 @@ class DateViewController: UIViewController {
 
     // if let timer is nil, timer invalidate
     @objc func meetingReminder () {
+        let content = UNMutableNotificationContent()
+        content.title = "Peer tutoring alert"
+        content.body = "You have a meeting on " + String(describing: meetingPicker.date)
+        content.badge = 1
         
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
         
     override func viewDidLoad() {
