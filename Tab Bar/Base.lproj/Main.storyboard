@@ -188,16 +188,13 @@
                                 <date key="date" timeIntervalSinceReferenceDate="543869362.46035898">
                                     <!--2018-03-27 18:49:22 +0000-->
                                 </date>
-                                <connections>
-                                    <action selector="meetingAction:" destination="WzP-Uu-Q0j" eventType="valueChanged" id="JXz-Xk-XCf"/>
-                                </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-gQ-bU0">
                                 <rect key="frame" x="153" y="600" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Set Alerts"/>
                                 <connections>
-                                    <action selector="setAlerts:" destination="WzP-Uu-Q0j" eventType="touchUpInside" id="1TC-2Y-32X"/>
+                                    <action selector="createMeeting:" destination="WzP-Uu-Q0j" eventType="touchUpInside" id="Y2b-aT-iWc"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7n-Kz-EaR">

@@ -7,22 +7,21 @@
 //
 
 import UIKit
+import UserNotifications
 
 class DateViewController: UIViewController {
+    var fiveMinsTimer: Timer!
+    var thirtyMinsTimer: Timer!
+    var oneHourTimer: Timer!
+    var oneDayTimer: Timer!
+    var twoDaysTimer: Timer!
+    var meetingTime: Date!
 
     var datePicker = UIDatePicker()
     var time = Date()
-    @IBOutlet weak var meetingPicker: UIDatePicker!
+    var isGrantedNotificationAccess = false
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBOutlet weak var meetingPicker: UIDatePicker!
     
     @IBOutlet weak var twoDays: UISwitch!
     
@@ -35,23 +34,43 @@ class DateViewController: UIViewController {
     @IBOutlet weak var fiveMins: UISwitch!
     
     
-    @IBAction func meetingAction(_ sender: Any) {
-        let dateFormatter = DateFormatter()
-        let meetingTime = meetingPicker.date
-        var meetingTimeCurrent = meetingTime.timeIntervalSinceNow
+     //   let dateFormatter = DateFormatter()
+       // let meetingTime = meetingPicker.date
+ //       var meetingTimeCurrent = meetingTime.timeIntervalSinceNow
         
        
 
        // var StringDate = dateFormatter.string(from: datePicker.date)
         
         
+    @IBAction func createMeeting(_ sender: UIButton) {
+        meetingTime = meetingPicker.date
+        var secondDifference = meetingTime.timeIntervalSinceNow
+        if oneHour.isOn {
+            oneHourTimer =  Timer.scheduledTimer(timeInterval: secondDifference, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
+            
+        }
     }
-    
-    @IBAction func setAlerts(_ sender: UIButton) {
-        timer = Timer.scheduledTimer(timeInterval: meetingTimeCurrent, target: self, selector: #selector(enableSubmitButton), userInfo: nil, repeats: false)
+
+    // if let timer is nil, timer invalidate
+    @objc func meetingReminder () {
         
     }
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        UNUserNotificationCenter.current().requestAuthorization(
+            options: [.alert,.sound,.badge],
+            completionHandler: { (granted,error) in
+                self.isGrantedNotificationAccess = granted
+        }
+        )
     }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+}
     
         //
 
