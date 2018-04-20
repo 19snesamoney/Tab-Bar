@@ -188,14 +188,14 @@
                                 <date key="date" timeIntervalSinceReferenceDate="543869362.46035898">
                                     <!--2018-03-27 18:49:22 +0000-->
                                 </date>
-                                <connections>
-                                    <action selector="meetingAction:" destination="WzP-Uu-Q0j" eventType="valueChanged" id="JXz-Xk-XCf"/>
-                                </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-gQ-bU0">
                                 <rect key="frame" x="153" y="600" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Set Alerts"/>
+                                <connections>
+                                    <action selector="createMeeting:" destination="WzP-Uu-Q0j" eventType="touchUpInside" id="Y2b-aT-iWc"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7n-Kz-EaR">
                                 <rect key="frame" x="291" y="90" width="49" height="31"/>
@@ -258,7 +258,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="H2U-ZJ-Add"/>
                     <connections>
+                        <outlet property="fiveMins" destination="EQg-8j-NLS" id="4oc-QN-jWS"/>
                         <outlet property="meetingPicker" destination="0Kz-A1-gqj" id="vrl-TP-2Lh"/>
+                        <outlet property="oneDay" destination="Taf-wx-xeM" id="GOT-rP-kX2"/>
+                        <outlet property="oneHour" destination="7En-0P-k2o" id="zgq-MB-m8X"/>
+                        <outlet property="thirtyMins" destination="hJQ-li-wCw" id="l1N-V1-K0l"/>
+                        <outlet property="twoDays" destination="Z7n-Kz-EaR" id="Atn-E2-vLf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DqE-Zb-ZiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
