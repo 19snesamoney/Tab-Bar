@@ -258,11 +258,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="H2U-ZJ-Add"/>
                     <connections>
-                        <outlet property="fiveMins" destination="EQg-8j-NLS" id="4oc-QN-jWS"/>
+                        <outlet property="fiveMins" destination="EQg-8j-NLS" id="Oiu-1c-WD6"/>
                         <outlet property="meetingPicker" destination="0Kz-A1-gqj" id="vrl-TP-2Lh"/>
                         <outlet property="oneDay" destination="Taf-wx-xeM" id="GOT-rP-kX2"/>
                         <outlet property="oneHour" destination="7En-0P-k2o" id="zgq-MB-m8X"/>
-                        <outlet property="thirtyMins" destination="hJQ-li-wCw" id="l1N-V1-K0l"/>
+                        <outlet property="thirtyMins" destination="hJQ-li-wCw" id="mCU-wa-WPT"/>
                         <outlet property="twoDays" destination="Z7n-Kz-EaR" id="Atn-E2-vLf"/>
                     </connections>
                 </viewController>

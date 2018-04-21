@@ -24,6 +24,8 @@ class DateViewController: UIViewController {
     @IBOutlet weak var meetingPicker: UIDatePicker!
     
     @IBOutlet weak var twoDays: UISwitch!
+    @IBOutlet weak var fiveMins: UISwitch!
+    @IBOutlet weak var thirtyMins: UISwitch!
     
     @IBOutlet weak var oneDay: UISwitch!
     
@@ -37,7 +39,7 @@ class DateViewController: UIViewController {
         let defaults = UserDefaults.standard
         let meeting = defaults.integer(forKey: "meetingTime")
        
-
+    }
        // var StringDate = dateFormatter.string(from: datePicker.date)
         
         
@@ -45,8 +47,17 @@ class DateViewController: UIViewController {
         meetingTime = meetingPicker.date
         var secondDifference = meetingTime.timeIntervalSinceNow
         if oneHour.isOn {
-            oneHourTimer =  Timer.scheduledTimer(timeInterval: secondDifference, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
+            oneHourTimer =  Timer.scheduledTimer(timeInterval: secondDifference - 3600, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
             
+        } else if fiveMins.isOn {
+            fiveMinsTimer = Timer.scheduledTimer(timeInterval: secondDifference - 300, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
+        } else if thirtyMins.isOn {
+            thirtyMinsTimer = Timer.scheduledTimer(timeInterval: secondDifference - 1800, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
+        }
+        else if oneDay.isOn {
+            oneDayTimer = Timer.scheduledTimer(timeInterval: secondDifference - 86400, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
+        } else if twoDays.isOn {
+            twoDaysTimer = Timer.scheduledTimer(timeInterval: secondDifference - 172800, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
         }
     }
 
