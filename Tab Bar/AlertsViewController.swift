@@ -12,18 +12,13 @@ import UserNotifications
 
 class AlertsViewController: UIViewController {
     
-    var time = Date()
-    var isGrantedNotificationAccess = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        UNUserNotificationCenter.current().requestAuthorization(
-            options: [.alert,.sound,.badge],
-            completionHandler: { (granted,error) in
-                self.isGrantedNotificationAccess = granted
+        
         }
-        )
-    }
+        
+    
         // Do any additional setup after loading the view.
     
 
@@ -36,27 +31,7 @@ class AlertsViewController: UIViewController {
     @IBOutlet weak var fiveMinOutlet: UISwitch!
     // put save in navigation bar
     @IBAction func fiveMinAction(_ sender: UISwitch) {
-        if isGrantedNotificationAccess && fiveMinOutlet.isOn {
-            let content = UNMutableNotificationContent()
-            content.title = "Meeting Alert"
-            content.body = "You have a meeting soon!!"
-            content.categoryIdentifier = "message"
-            var dateComponents = DateComponents()
-            dateComponents.month = 7
-            dateComponents.weekday = 6
-            dateComponents.hour = 10
-            dateComponents.minute = 48
-            let notificationTrigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-            
-            let request = UNNotificationRequest(
-                identifier: "10.second.message",
-                content: content,
-                trigger: notificationTrigger
-            )
-            UNUserNotificationCenter.current().add(
-                request, withCompletionHandler: nil)
-        }
-    }
+        
 }
         
 
@@ -76,3 +51,4 @@ class AlertsViewController: UIViewController {
 
 
 
+}

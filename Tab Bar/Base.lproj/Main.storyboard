@@ -157,7 +157,7 @@
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
                                 <state key="normal" title="Add a meeting!"/>
                                 <connections>
-                                    <segue destination="zWE-h2-f8v" kind="modal" id="Gv5-Hq-I3C"/>
+                                    <segue destination="K4v-AC-Hvg" kind="show" id="eyk-Aa-d4j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -456,7 +456,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWg-BD-MrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1903" y="-215"/>
+            <point key="canvasLocation" x="1692" y="-321"/>
         </scene>
         <!--Alerts-->
         <scene sceneID="fcZ-oE-QnP">
