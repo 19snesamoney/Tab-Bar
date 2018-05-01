@@ -7,19 +7,34 @@
 //
 
 import UIKit
+import UserNotifications
+
 
 class AlertsViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        }
+        
+    
         // Do any additional setup after loading the view.
-    }
+    
 
     override func didReceiveMemoryWarning() { //
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // save button
+    @IBOutlet weak var fiveMinOutlet: UISwitch!
+    // put save in navigation bar
+    @IBAction func fiveMinAction(_ sender: UISwitch) {
+        
+}
+        
+
     
 
     /*
@@ -32,7 +47,8 @@ class AlertsViewController: UIViewController {
     }
     */
 
+
+
+
+
 }
-
-
-
