@@ -23,7 +23,6 @@ class GoalsViewController: UIViewController, UITableViewDataSource {
             editButton.title = "Edit"
         }
     }
-    
     //Allows reordering of table cells
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
