@@ -50,7 +50,7 @@ class DateViewController: UIViewController {
             oneHourTimer =  Timer.scheduledTimer(timeInterval: secondDifference - 3600, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
             
         } else if fiveMins.isOn {
-            fiveMinsTimer = Timer.scheduledTimer(timeInterval: secondDifference - 300, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
+            fiveMinsTimer = Timer.scheduledTimer(timeInterval: secondDifference - 240, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
         } else if thirtyMins.isOn {
             thirtyMinsTimer = Timer.scheduledTimer(timeInterval: secondDifference - 1800, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
         }
