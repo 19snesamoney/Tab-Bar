@@ -58,7 +58,7 @@ class DateViewController: UIViewController {
             oneDayTimer = Timer.scheduledTimer(timeInterval: secondDifference - 86400, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
         } else if twoDays.isOn {
             twoDaysTimer = Timer.scheduledTimer(timeInterval: secondDifference - 172800, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
-        }
+                    }
     }
 
     // if let timer is nil, timer invalidate
