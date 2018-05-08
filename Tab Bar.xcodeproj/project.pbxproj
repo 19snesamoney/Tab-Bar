@@ -10,6 +10,8 @@
 		1D287C0A206ACA2D00A1E499 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D287C09206ACA2D00A1E499 /* DateViewController.swift */; };
 		1D287C102073D14C00A1E499 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D287C0F2073D14C00A1E499 /* Time.swift */; };
 		1D287C112076A3CF00A1E499 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8EBD920695D7100C5E31E /* AlertsViewController.swift */; };
+		27926FFB20A1F9E4005F6D38 /* AddMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27926FFA20A1F9E4005F6D38 /* AddMeetingViewController.swift */; };
+		27926FFD20A1FA23005F6D38 /* AddPurposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27926FFC20A1FA23005F6D38 /* AddPurposeViewController.swift */; };
 		27F19E0C206EB33B00562388 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F19E0B206EB33B00562388 /* AddTaskViewController.swift */; };
 		7463ECB820642A5B00F314F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECB720642A5B00F314F9 /* AppDelegate.swift */; };
 		7463ECBA20642A5B00F314F9 /* MeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7463ECB920642A5B00F314F9 /* MeetingViewController.swift */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		1D287C09206ACA2D00A1E499 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		1D287C0F2073D14C00A1E499 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		27926FFA20A1F9E4005F6D38 /* AddMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeetingViewController.swift; sourceTree = "<group>"; };
+		27926FFC20A1FA23005F6D38 /* AddPurposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPurposeViewController.swift; sourceTree = "<group>"; };
 		27F19E0B206EB33B00562388 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		7463ECB420642A5B00F314F9 /* Tab Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tab Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7463ECB720642A5B00F314F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,13 +114,15 @@
 		7463ECB620642A5B00F314F9 /* Tab Bar */ = {
 			isa = PBXGroup;
 			children = (
-				7463ECB720642A5B00F314F9 /* AppDelegate.swift */,
+				7463ECBD20642A5B00F314F9 /* Main.storyboard */,
+				27926FFC20A1FA23005F6D38 /* AddPurposeViewController.swift */,
+				27926FFA20A1F9E4005F6D38 /* AddMeetingViewController.swift */,
 				7463ECB920642A5B00F314F9 /* MeetingViewController.swift */,
+				7463ECB720642A5B00F314F9 /* AppDelegate.swift */,
 				7463ECBB20642A5B00F314F9 /* GoalsViewController.swift */,
 				27F19E0B206EB33B00562388 /* AddTaskViewController.swift */,
 				1D287C0F2073D14C00A1E499 /* Time.swift */,
 				74B8EBD920695D7100C5E31E /* AlertsViewController.swift */,
-				7463ECBD20642A5B00F314F9 /* Main.storyboard */,
 				1D287C09206ACA2D00A1E499 /* DateViewController.swift */,
 				7463ECC020642A5B00F314F9 /* Assets.xcassets */,
 				7463ECC220642A5B00F314F9 /* LaunchScreen.storyboard */,
@@ -280,6 +286,8 @@
 			files = (
 				1D287C112076A3CF00A1E499 /* AlertsViewController.swift in Sources */,
 				1D287C102073D14C00A1E499 /* Time.swift in Sources */,
+				27926FFD20A1FA23005F6D38 /* AddPurposeViewController.swift in Sources */,
+				27926FFB20A1F9E4005F6D38 /* AddMeetingViewController.swift in Sources */,
 				7463ECBC20642A5B00F314F9 /* GoalsViewController.swift in Sources */,
 				7463ECB820642A5B00F314F9 /* AppDelegate.swift in Sources */,
 				7463ECBA20642A5B00F314F9 /* MeetingViewController.swift in Sources */,
