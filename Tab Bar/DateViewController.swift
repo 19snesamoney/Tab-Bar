@@ -9,7 +9,7 @@
 import UIKit
 import UserNotifications
 
-class DateViewController: UIViewController {
+class DateViewController: UIViewController, UNUserNotificationCenterDelegate {
     var fiveMinsTimer: Timer!
     var thirtyMinsTimer: Timer!
     var oneHourTimer: Timer!
@@ -47,33 +47,104 @@ class DateViewController: UIViewController {
         meetingTime = meetingPicker.date
         var secondDifference = meetingTime.timeIntervalSinceNow
         if oneHour.isOn {
-            oneHourTimer =  Timer.scheduledTimer(timeInterval: secondDifference - 3600, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
+            let content = UNMutableNotificationContent()
+            content.title = "Meeting alert"
+            content.body = "You have a meeting on " + String(describing: meetingPicker.date)
+            content.badge = 1
+            
+            //getting the notification trigger
+            //it will be called after 5 seconds
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: secondDifference - 3600, repeats: false)
+            
+            //getting the notification request
+            let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
+            
+            // You must add UNUserNotificationCenterDelegate to class header
+            UNUserNotificationCenter.current().delegate = (self as! UNUserNotificationCenterDelegate)
+            
+            //adding the notification to notification center
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
             
         } else if fiveMins.isOn {
-            fiveMinsTimer = Timer.scheduledTimer(timeInterval: secondDifference - 300, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
+            let content = UNMutableNotificationContent()
+            content.title = "Meeting alert"
+            content.body = "You have a meeting on " + String(describing: meetingPicker.date)
+            content.badge = 1
+            
+            //getting the notification trigger
+            //it will be called after 5 seconds
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: secondDifference - 300, repeats: false)
+            
+            //getting the notification request
+            let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
+            
+            // You must add UNUserNotificationCenterDelegate to class header
+            UNUserNotificationCenter.current().delegate = self
+            
+            //adding the notification to notification center
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+            
         } else if thirtyMins.isOn {
-            thirtyMinsTimer = Timer.scheduledTimer(timeInterval: secondDifference - 1800, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
+            let content = UNMutableNotificationContent()
+            content.title = "Meeting alert"
+            content.body = "You have a meeting on " + String(describing: meetingPicker.date)
+            content.badge = 1
+            
+            //getting the notification trigger
+            //it will be called after 5 seconds
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: secondDifference - 1800, repeats: false)
+            
+            //getting the notification request
+            let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
+            
+            // You must add UNUserNotificationCenterDelegate to class header
+            UNUserNotificationCenter.current().delegate = (self as! UNUserNotificationCenterDelegate)
+            
+            //adding the notification to notification center
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+            
         }
         else if oneDay.isOn {
-            oneDayTimer = Timer.scheduledTimer(timeInterval: secondDifference - 86400, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
+            let content = UNMutableNotificationContent()
+            content.title = "Meeting alert"
+            content.body = "You have a meeting on " + String(describing: meetingPicker.date)
+            content.badge = 1
+            
+            //getting the notification trigger
+            //it will be called after 5 seconds
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: secondDifference - 86400, repeats: false)
+            
+            //getting the notification request
+            let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
+            
+            // You must add UNUserNotificationCenterDelegate to class header
+            UNUserNotificationCenter.current().delegate = (self as! UNUserNotificationCenterDelegate)
+            
+            //adding the notification to notification center
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         } else if twoDays.isOn {
-            twoDaysTimer = Timer.scheduledTimer(timeInterval: secondDifference - 172800, target: self, selector: #selector(meetingReminder), userInfo: nil, repeats: true) //talk w group about repeat
-        }
+            let content = UNMutableNotificationContent()
+            content.title = "Meeting alert"
+            content.body = "You have a meeting on " + String(describing: meetingPicker.date)
+            content.badge = 1
+            
+            //getting the notification trigger
+            //it will be called after 5 seconds
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: secondDifference - 172800, repeats: false)
+            
+            //getting the notification request
+            let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
+            
+            // You must add UNUserNotificationCenterDelegate to class header
+            UNUserNotificationCenter.current().delegate = (self as! UNUserNotificationCenterDelegate)
+            
+            //adding the notification to notification center
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+            
     }
-
+    }
     // if let timer is nil, timer invalidate
-    @objc func meetingReminder () {
-        let content = UNMutableNotificationContent()
-        content.title = "Peer tutoring alert"
-        content.body = "You have a meeting on " + String(describing: meetingPicker.date)
-        content.badge = 1
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-        
-        let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-    }
-        
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         UNUserNotificationCenter.current().requestAuthorization(
