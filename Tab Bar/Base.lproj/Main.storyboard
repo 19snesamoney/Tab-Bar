@@ -204,34 +204,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Kz-A1-gqj">
-                                <rect key="frame" x="0.0" y="430" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="407" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="543869362.46035898">
                                     <!--2018-03-27 18:49:22 +0000-->
                                 </date>
                             </datePicker>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7n-Kz-EaR">
-                                <rect key="frame" x="291" y="90" width="49" height="31"/>
+                                <rect key="frame" x="291" y="106" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Taf-wx-xeM">
-                                <rect key="frame" x="289" y="167" width="49" height="31"/>
+                                <rect key="frame" x="291" y="167" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7En-0P-k2o">
-                                <rect key="frame" x="291" y="237" width="49" height="31"/>
+                                <rect key="frame" x="291" y="227" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hJQ-li-wCw">
-                                <rect key="frame" x="291" y="318" width="49" height="31"/>
+                                <rect key="frame" x="291" y="287" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQg-8j-NLS">
-                                <rect key="frame" x="288" y="391" width="49" height="31"/>
+                                <rect key="frame" x="291" y="348" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 days before" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZg-RP-nab">
-                                <rect key="frame" x="27" y="90" width="211" height="53"/>
+                                <rect key="frame" x="29" y="95" width="211" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -245,40 +245,45 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 hour before" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeA-br-IZO">
-                                <rect key="frame" x="27" y="235" width="211" height="53"/>
+                                <rect key="frame" x="27" y="216" width="211" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30 mins before" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qli-up-teO">
-                                <rect key="frame" x="27" y="307" width="211" height="53"/>
+                                <rect key="frame" x="27" y="276" width="211" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 mins before" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3d-c0-9S4">
-                                <rect key="frame" x="27" y="380" width="211" height="53"/>
+                                <rect key="frame" x="27" y="337" width="211" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIB-fp-2Nx">
+                                <rect key="frame" x="119" y="558" width="136" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Set Alerts!"/>
+                                <connections>
+                                    <action selector="createMeeting:" destination="WzP-Uu-Q0j" eventType="touchUpInside" id="5Wn-qF-zIQ"/>
+                                    <action selector="meetingAction:" destination="WzP-Uu-Q0j" eventType="touchUpInside" id="S5Z-L8-BMj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="MUG-HH-pS3"/>
                     </view>
                     <navigationItem key="navigationItem" id="H2U-ZJ-Add">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="DZh-ss-reU">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TAP-gQ-bU0">
-                                <rect key="frame" x="291" y="7" width="68" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Set Alerts"/>
-                                <connections>
-                                    <action selector="createMeeting:" destination="WzP-Uu-Q0j" eventType="touchUpInside" id="Y2b-aT-iWc"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="KTn-HG-8ZG">
+                            <connections>
+                                <segue destination="MeT-vl-3sj" kind="unwind" identifier="saveDate" unwindAction="unwindSaveNewDateWithUnwindSegue:" id="eDk-1y-SmK"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -291,8 +296,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DqE-Zb-ZiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MeT-vl-3sj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3446" y="220"/>
+            <point key="canvasLocation" x="3445.5999999999999" y="219.94002998500753"/>
         </scene>
         <!--Tutor-->
         <scene sceneID="gVP-jJ-Nxb">
@@ -321,13 +327,18 @@
                         <viewLayoutGuide key="safeArea" id="BOi-ha-6FV"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tutor" id="ZfM-ds-GTd">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="yQm-sg-96i"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="yQm-sg-96i">
+                            <connections>
+                                <segue destination="jjU-rg-mKO" kind="unwind" identifier="saveTutor" unwindAction="unwindSaveNewTutorWithUnwindSegue:" id="mii-Ie-Hy0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="textField" destination="QHc-W3-WBm" id="Sae-HC-ECM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECY-hC-34V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="jjU-rg-mKO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4205.6000000000004" y="219.94002998500753"/>
         </scene>
@@ -359,13 +370,18 @@
                         <viewLayoutGuide key="safeArea" id="gTf-bO-HTe"/>
                     </view>
                     <navigationItem key="navigationItem" title="Location" id="EGH-H6-ecr">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="vAz-c4-Y5W"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="vAz-c4-Y5W">
+                            <connections>
+                                <segue destination="yUo-Kw-whl" kind="unwind" identifier="saveLocation" unwindAction="unwindSaveNewLocationWithUnwindSegue:" id="rco-qO-aTz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="textField" destination="73K-MJ-K4z" id="fup-Qr-Pc8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qi-En-VL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yUo-Kw-whl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4205.6000000000004" y="-619.34032983508246"/>
         </scene>
@@ -501,7 +517,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2m-lO-tPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1129" y="0.0"/>
+            <point key="canvasLocation" x="-910" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

@@ -10,6 +10,7 @@ import UIKit
 import UserNotifications
 
 class DateViewController: UIViewController, UNUserNotificationCenterDelegate {
+    var stringDate = ""
     var fiveMinsTimer: Timer!
     var thirtyMinsTimer: Timer!
     var oneHourTimer: Timer!
@@ -17,7 +18,7 @@ class DateViewController: UIViewController, UNUserNotificationCenterDelegate {
     var twoDaysTimer: Timer!
     var meetingTime: Date!
 
-    var datePicker = UIDatePicker()
+//    var datePicker = UIDatePicker() remove?
     var time = Date()
     var isGrantedNotificationAccess = false
 
@@ -34,14 +35,25 @@ class DateViewController: UIViewController, UNUserNotificationCenterDelegate {
     @IBAction func meetingAction(_ sender: Any) {
         let dateFormatter = DateFormatter()
         let meetingTime = meetingPicker.date
-        meetingTime.timeIntervalSinceNow
+        
+//        meetingTime.timeIntervalSinceNow remove?
+        print(meetingTime)
 
         let defaults = UserDefaults.standard
-        let meeting = defaults.integer(forKey: "meetingTime")
-       
+        let meeting = defaults.integer(forKey: "meetingTime") //remove? --> This is getting not setting the meeting time
     }
-       // var StringDate = dateFormatter.string(from: datePicker.date)
-        
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "saveDate" {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = .medium
+            dateFormatter.timeStyle = .short
+            let meetingTime = meetingPicker.date
+            dateFormatter.locale = Locale(identifier: "en_US")
+            dateFormatter.setLocalizedDateFormatFromTemplate("MMMd,h:mma")
+            stringDate = dateFormatter.string(from: meetingTime)
+        }
+    }
         
     @IBAction func createMeeting(_ sender: UIButton) {
         meetingTime = meetingPicker.date
