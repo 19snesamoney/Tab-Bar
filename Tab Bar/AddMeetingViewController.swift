@@ -10,7 +10,7 @@ import UIKit
 
 class AddMeetingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var time = TimeCalc()
-    var actionList = ["Purpose", "Date"]
+    var actionList = ["Tutor", "Location", "Purpose", "Date"]
     var subtitleList = [""]
     @IBOutlet weak var tableView: UITableView!
     

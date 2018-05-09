@@ -8,7 +8,7 @@
 import UIKit
 
 class MeetingViewController: UIViewController, UITableViewDataSource {
-    var somethingList = ["Hi"]
+    var somethingList = [""]
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
     
