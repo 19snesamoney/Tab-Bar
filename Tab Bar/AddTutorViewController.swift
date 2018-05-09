@@ -1,16 +1,15 @@
 //
-//  AddTaskViewController.swift
+//  AddPurposeViewController.swift
 //  Tab Bar
 //
-//  Created by Madeline Webster on 3/30/18.
+//  Created by Madeline Webster on 5/8/18.
 //  Copyright © 2018 Sophia Nesamoney. All rights reserved.
 //
 
 import UIKit
 
-class AddTaskViewController: UIViewController {
-    var newTask = ""
-    
+class AddTutorViewController: UIViewController {
+    var newTutor = ""
     @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +19,7 @@ class AddTaskViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "save" {
-            newTask = textField.text!
+            newTutor = textField.text!
         }
     }
     
@@ -39,4 +38,6 @@ class AddTaskViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
+    
 }
+
