@@ -18,7 +18,7 @@ class AddLocationViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "save" {
+        if segue.identifier == "saveLocation" {
             newLocation = textField.text!
         }
     }

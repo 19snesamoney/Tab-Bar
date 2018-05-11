@@ -18,7 +18,7 @@ class AddTutorViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "save" {
+        if segue.identifier == "saveTutor" {
             newTutor = textField.text!
         }
     }

@@ -11,7 +11,7 @@ import UIKit
 class AddMeetingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var time = TimeCalc()
     var actionList = ["Tutor", "Location", "Purpose", "Date"]
-    var subtitleList = [""]
+    var subtitleList = ["", "", "", ""]
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -31,14 +31,42 @@ class AddMeetingViewController: UIViewController, UITableViewDataSource, UITable
         performSegue(withIdentifier: actionList[indexPath.row], sender: self)
     }
     
-    // Unwind Save Button
+    // Unwind Save Button For Purpose
     @IBAction func unwindSaveNewToDo(unwindSegue: UIStoryboardSegue) {
         if let addPurposeVC = unwindSegue.source as? AddPurposeViewController {
             if addPurposeVC.newPurpose.count != 0 {
-                if let index = subtitleList.index(of: subtitleList.first!) {
-                    subtitleList.remove(at: index)
-                    subtitleList.append(addPurposeVC.newPurpose)
-                }
+                subtitleList.remove(at: actionList.index(of: "Purpose")!)
+                subtitleList.insert(addPurposeVC.newPurpose, at: actionList.index(of: "Purpose")!)
+            }
+        }
+    }
+    
+    // Unwind Save Button For Location
+    @IBAction func unwindSaveNewLocation(unwindSegue: UIStoryboardSegue) {
+        if let addLocationVC = unwindSegue.source as? AddLocationViewController {
+            if addLocationVC.newLocation.count != 0 {
+                subtitleList.remove(at: actionList.index(of: "Location")!)
+                subtitleList.insert(addLocationVC.newLocation, at: actionList.index(of: "Location")!)
+            }
+        }
+    }
+    
+    // Unwind Save Button For Tutor
+    @IBAction func unwindSaveNewTutor(unwindSegue: UIStoryboardSegue) {
+        if let addTutorVC = unwindSegue.source as? AddTutorViewController {
+            if addTutorVC.newTutor.count != 0 {
+                subtitleList.remove(at: actionList.index(of: "Tutor")!)
+                subtitleList.insert(addTutorVC.newTutor, at: actionList.index(of: "Tutor")!)
+            }
+        }
+    }
+    
+    // Unwind Save Button For Date
+    @IBAction func unwindSaveNewDate(unwindSegue: UIStoryboardSegue) {
+        if let addDateVC = unwindSegue.source as? DateViewController {
+            if addDateVC.stringDate.count != 0 {
+                subtitleList.remove(at: actionList.index(of: "Date")!)
+                subtitleList.insert(addDateVC.stringDate, at: actionList.index(of: "Date")!)
             }
         }
     }
@@ -61,6 +89,9 @@ class AddMeetingViewController: UIViewController, UITableViewDataSource, UITable
         if segue.identifier == "saveNewMeeting" {
             subtitleList = [subtitleList.first!]
         }
+//        if let dateViewController = segue.destination.childViewControllers.first as? DateViewController {
+////                dateViewController.time = self.time
+//        }
     }
     
     
@@ -68,7 +99,7 @@ class AddMeetingViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")
         let text = actionList[indexPath.row]
-        let subtitle = subtitleList[indexPath.first!]
+        let subtitle = subtitleList[indexPath.row]
         cell!.textLabel?.text = text
         cell!.detailTextLabel?.text = subtitle
         return cell!
@@ -80,7 +111,7 @@ class AddMeetingViewController: UIViewController, UITableViewDataSource, UITable
 //        }
 //
 //    }
-    
+//
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
