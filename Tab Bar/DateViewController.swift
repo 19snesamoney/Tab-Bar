@@ -61,7 +61,7 @@ class DateViewController: UIViewController, UNUserNotificationCenterDelegate {
         if oneHour.isOn {
             let content = UNMutableNotificationContent()
             content.title = "Meeting alert"
-            content.body = "You have a meeting on " + String(describing: meetingPicker.date)
+            content.body = "You have a meeting in an hour!"
             content.badge = 1
             
             //getting the notification trigger
@@ -72,7 +72,7 @@ class DateViewController: UIViewController, UNUserNotificationCenterDelegate {
             let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
             
             // You must add UNUserNotificationCenterDelegate to class header
-            UNUserNotificationCenter.current().delegate = (self as! UNUserNotificationCenterDelegate)
+            UNUserNotificationCenter.current().delegate = self
             
             //adding the notification to notification center
             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
@@ -80,7 +80,7 @@ class DateViewController: UIViewController, UNUserNotificationCenterDelegate {
         } else if fiveMins.isOn {
             let content = UNMutableNotificationContent()
             content.title = "Meeting alert"
-            content.body = "You have a meeting on " + String(describing: meetingPicker.date)
+            content.body = "You have a meeting in 5 minutes!"
             content.badge = 1
             
             //getting the notification trigger
@@ -99,7 +99,7 @@ class DateViewController: UIViewController, UNUserNotificationCenterDelegate {
         } else if thirtyMins.isOn {
             let content = UNMutableNotificationContent()
             content.title = "Meeting alert"
-            content.body = "You have a meeting on " + String(describing: meetingPicker.date)
+            content.body = "You have a meeting in thirty minutes!"
             content.badge = 1
             
             //getting the notification trigger
@@ -110,8 +110,7 @@ class DateViewController: UIViewController, UNUserNotificationCenterDelegate {
             let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
             
             // You must add UNUserNotificationCenterDelegate to class header
-            UNUserNotificationCenter.current().delegate = (self as! UNUserNotificationCenterDelegate)
-            
+            UNUserNotificationCenter.current().delegate = self
             //adding the notification to notification center
             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
             
@@ -130,7 +129,7 @@ class DateViewController: UIViewController, UNUserNotificationCenterDelegate {
             let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
             
             // You must add UNUserNotificationCenterDelegate to class header
-            UNUserNotificationCenter.current().delegate = (self as! UNUserNotificationCenterDelegate)
+            UNUserNotificationCenter.current().delegate = self
             
             //adding the notification to notification center
             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
@@ -148,7 +147,7 @@ class DateViewController: UIViewController, UNUserNotificationCenterDelegate {
             let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
             
             // You must add UNUserNotificationCenterDelegate to class header
-            UNUserNotificationCenter.current().delegate = (self as! UNUserNotificationCenterDelegate)
+            UNUserNotificationCenter.current().delegate = self
             
             //adding the notification to notification center
             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
