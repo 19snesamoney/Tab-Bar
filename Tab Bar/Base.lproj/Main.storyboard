@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -515,36 +514,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4i-o4-Alb">
-                                <rect key="frame" x="16" y="172" width="343" height="323"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="a4i-o4-Alb" secondAttribute="height" multiplier="343:323" id="FAX-6t-qO9"/>
-                                    <constraint firstAttribute="height" constant="323" id="nH1-Su-c6O"/>
-                                    <constraint firstAttribute="width" constant="343" id="nlw-gB-3Wo"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textFont" translatesAutoresizingMaskIntoConstraints="NO" id="ASE-ur-q0K">
+                                <rect key="frame" x="22" y="65" width="331" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4i-o4-Alb">
+                                <rect key="frame" x="16" y="282" width="343" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Welcome to Peer Tutoring Pal, an app to help you remember all your peer tutoring appointments! Enter your tutor name, location, purpose and date to recieve reminders about your meeting. You can also set goals with your peer tutor and track your progress over the year.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textFont" translatesAutoresizingMaskIntoConstraints="NO" id="ASE-ur-q0K">
-                                <rect key="frame" x="22" y="65" width="331" height="159"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ASE-ur-q0K" secondAttribute="height" multiplier="331:159" id="6SR-gV-EPq"/>
-                                    <constraint firstAttribute="width" constant="331" id="HMc-Hl-Brx"/>
-                                    <constraint firstAttribute="height" constant="159" id="zdg-97-74c"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ASE-ur-q0K" firstAttribute="leading" secondItem="Fdz-CY-Ibv" secondAttribute="leading" constant="22" id="2GI-RZ-O36"/>
-                            <constraint firstItem="Fdz-CY-Ibv" firstAttribute="bottom" secondItem="a4i-o4-Alb" secondAttribute="bottom" constant="123" id="9iJ-tH-HAH"/>
-                            <constraint firstItem="Fdz-CY-Ibv" firstAttribute="trailing" secondItem="ASE-ur-q0K" secondAttribute="trailing" constant="22" id="MIR-JV-kVw"/>
-                            <constraint firstItem="ASE-ur-q0K" firstAttribute="top" secondItem="Fdz-CY-Ibv" secondAttribute="top" constant="45" id="QW6-Qe-CWD"/>
-                            <constraint firstItem="a4i-o4-Alb" firstAttribute="leading" secondItem="Fdz-CY-Ibv" secondAttribute="leading" constant="16" id="T5w-vA-2g8"/>
-                            <constraint firstItem="Fdz-CY-Ibv" firstAttribute="trailing" secondItem="a4i-o4-Alb" secondAttribute="trailing" constant="16" id="ZAC-F5-y5M"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fdz-CY-Ibv"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="wrL-lJ-Omo"/>
