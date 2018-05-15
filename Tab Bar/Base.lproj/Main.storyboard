@@ -13,8 +13,8 @@
         <array key="Didot.ttc">
             <string>Didot</string>
         </array>
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
+        <array key="KohinoorBangla.ttc">
+            <string>KohinoorBangla-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -517,8 +517,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4i-o4-Alb">
                                 <rect key="frame" x="16" y="172" width="343" height="323"/>
                                 <string key="text">Welcome to Peer Tutoring Pal: an app to help you remember all your peer tutoring appointments! Enter your tutor name, location, purpose and date to recieve reminders about your meeting. You can also set goals with your peer tutor and track your progress over the year.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textFont" translatesAutoresizingMaskIntoConstraints="NO" id="ASE-ur-q0K">
