@@ -10,6 +10,7 @@
 		1D287C0A206ACA2D00A1E499 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D287C09206ACA2D00A1E499 /* DateViewController.swift */; };
 		1D287C102073D14C00A1E499 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D287C0F2073D14C00A1E499 /* Time.swift */; };
 		1D287C112076A3CF00A1E499 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8EBD920695D7100C5E31E /* AlertsViewController.swift */; };
+		270BE52120AA08420083976C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270BE52020AA08420083976C /* Section.swift */; };
 		2725BD9E20A38BB100A6AFCE /* AddTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725BD9D20A38BB100A6AFCE /* AddTutorViewController.swift */; };
 		2725BDA020A38BF300A6AFCE /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2725BD9F20A38BF300A6AFCE /* AddLocationViewController.swift */; };
 		27926FFB20A1F9E4005F6D38 /* AddMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27926FFA20A1F9E4005F6D38 /* AddMeetingViewController.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		1D287C09206ACA2D00A1E499 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		1D287C0F2073D14C00A1E499 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		270BE52020AA08420083976C /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		2725BD9D20A38BB100A6AFCE /* AddTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTutorViewController.swift; sourceTree = "<group>"; };
 		2725BD9F20A38BF300A6AFCE /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		27926FFA20A1F9E4005F6D38 /* AddMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeetingViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270BE51F20AA07FC0083976C /* ExpandableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				270BE52020AA08420083976C /* Section.swift */,
+			);
+			path = ExpandableHeaderView;
+			sourceTree = "<group>";
+		};
 		7463ECAB20642A5B00F314F9 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		7463ECB620642A5B00F314F9 /* Tab Bar */ = {
 			isa = PBXGroup;
 			children = (
+				270BE51F20AA07FC0083976C /* ExpandableHeaderView */,
 				7463ECBD20642A5B00F314F9 /* Main.storyboard */,
 				2725BD9D20A38BB100A6AFCE /* AddTutorViewController.swift */,
 				2725BD9F20A38BF300A6AFCE /* AddLocationViewController.swift */,
@@ -299,6 +310,7 @@
 				7463ECBC20642A5B00F314F9 /* GoalsViewController.swift in Sources */,
 				7463ECB820642A5B00F314F9 /* AppDelegate.swift in Sources */,
 				7463ECBA20642A5B00F314F9 /* MeetingViewController.swift in Sources */,
+				270BE52120AA08420083976C /* Section.swift in Sources */,
 				1D287C0A206ACA2D00A1E499 /* DateViewController.swift in Sources */,
 				27F19E0C206EB33B00562388 /* AddTaskViewController.swift in Sources */,
 			);
