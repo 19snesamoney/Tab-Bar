@@ -530,20 +530,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We hope you enjoy our tutoring app!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIV-Ho-yYY">
+                                <rect key="frame" x="16" y="379" width="343" height="59"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textFont" translatesAutoresizingMaskIntoConstraints="NO" id="ASE-ur-q0K">
                                 <rect key="frame" x="22" y="83" width="331" height="170"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sreya '18, Sophia '19, and Madeline '19" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="375-Ln-BdA">
+                                <rect key="frame" x="8" y="427" width="359" height="62"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Fdz-CY-Ibv" firstAttribute="trailing" secondItem="DIV-Ho-yYY" secondAttribute="trailing" constant="16" id="31m-Yc-zm5"/>
                             <constraint firstItem="Fdz-CY-Ibv" firstAttribute="trailing" secondItem="ASE-ur-q0K" secondAttribute="trailing" constant="22" id="8Hc-Ek-2uE"/>
                             <constraint firstItem="a4i-o4-Alb" firstAttribute="top" secondItem="Fdz-CY-Ibv" secondAttribute="top" constant="223" id="LVs-Hh-Hne"/>
+                            <constraint firstItem="Fdz-CY-Ibv" firstAttribute="bottom" secondItem="DIV-Ho-yYY" secondAttribute="bottom" constant="180" id="MGK-n0-u88"/>
                             <constraint firstItem="ASE-ur-q0K" firstAttribute="top" secondItem="Fdz-CY-Ibv" secondAttribute="top" constant="63" id="NSF-M0-5Pp"/>
+                            <constraint firstItem="Fdz-CY-Ibv" firstAttribute="bottom" secondItem="375-Ln-BdA" secondAttribute="bottom" constant="129" id="OEM-XA-yeV"/>
+                            <constraint firstItem="375-Ln-BdA" firstAttribute="top" secondItem="a4i-o4-Alb" secondAttribute="bottom" constant="45" id="TJR-IS-wFc"/>
+                            <constraint firstItem="DIV-Ho-yYY" firstAttribute="leading" secondItem="Fdz-CY-Ibv" secondAttribute="leading" constant="16" id="UAJ-ue-v3u"/>
+                            <constraint firstItem="DIV-Ho-yYY" firstAttribute="top" secondItem="ASE-ur-q0K" secondAttribute="bottom" constant="126" id="UKD-cT-Mao"/>
                             <constraint firstItem="Fdz-CY-Ibv" firstAttribute="bottom" secondItem="ASE-ur-q0K" secondAttribute="bottom" constant="365" id="aGI-U4-UZ9"/>
+                            <constraint firstItem="Fdz-CY-Ibv" firstAttribute="trailing" secondItem="375-Ln-BdA" secondAttribute="trailing" constant="8" id="bql-jL-3ex"/>
                             <constraint firstItem="Fdz-CY-Ibv" firstAttribute="trailing" secondItem="a4i-o4-Alb" secondAttribute="trailing" constant="16" id="cYq-K2-2Kl"/>
                             <constraint firstItem="ASE-ur-q0K" firstAttribute="leading" secondItem="Fdz-CY-Ibv" secondAttribute="leading" constant="22" id="vD9-yw-bGC"/>
                             <constraint firstItem="a4i-o4-Alb" firstAttribute="leading" secondItem="Fdz-CY-Ibv" secondAttribute="leading" constant="16" id="wIt-8P-oqC"/>
                             <constraint firstItem="Fdz-CY-Ibv" firstAttribute="bottom" secondItem="a4i-o4-Alb" secondAttribute="bottom" constant="236" id="zDF-3J-YJB"/>
+                            <constraint firstItem="375-Ln-BdA" firstAttribute="leading" secondItem="Fdz-CY-Ibv" secondAttribute="leading" constant="8" id="zab-vT-T3i"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fdz-CY-Ibv"/>
                     </view>
