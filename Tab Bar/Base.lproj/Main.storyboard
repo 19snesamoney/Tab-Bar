@@ -36,7 +36,8 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-ZH-Y1Z">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellReuseThing" id="tLe-ux-lsw">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -45,11 +46,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Pbr-ZH-Y1Z" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="6CK-vM-2AL"/>
                             <constraint firstItem="Pbr-ZH-Y1Z" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="NcR-Qh-rVX"/>
@@ -89,7 +91,8 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e2Y-NC-Jeh">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellReuseIdentifier" textLabel="BjO-Fy-ztX" detailTextLabel="NJk-9r-KNe" style="IBUITableViewCellStyleValue1" id="0zR-uI-jS9">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -114,6 +117,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -126,7 +130,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="e2Y-NC-Jeh" firstAttribute="trailing" secondItem="9w8-cL-AU4" secondAttribute="trailing" id="3zI-9W-D7z"/>
                             <constraint firstItem="e2Y-NC-Jeh" firstAttribute="top" secondItem="9w8-cL-AU4" secondAttribute="top" id="6GC-nS-zYu"/>
@@ -173,7 +177,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rfU-K3-KG2" firstAttribute="bottom" secondItem="rNd-qB-Tjy" secondAttribute="bottom" constant="283" id="57c-2P-q35"/>
                             <constraint firstItem="rNd-qB-Tjy" firstAttribute="leading" secondItem="rfU-K3-KG2" secondAttribute="leading" constant="16" id="9Fc-Vy-2yJ"/>
@@ -279,7 +283,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="MUG-HH-pS3"/>
                     </view>
                     <navigationItem key="navigationItem" id="H2U-ZJ-Add">
@@ -318,7 +322,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BOi-ha-6FV" firstAttribute="bottom" secondItem="QHc-W3-WBm" secondAttribute="bottom" constant="270" id="23K-Nz-d5o"/>
                             <constraint firstItem="BOi-ha-6FV" firstAttribute="trailing" secondItem="QHc-W3-WBm" secondAttribute="trailing" constant="16" id="2Cr-Gw-YID"/>
@@ -363,7 +367,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="73K-MJ-K4z" firstAttribute="leading" secondItem="gTf-bO-HTe" secondAttribute="leading" constant="16" id="SC7-pg-Wj3"/>
                             <constraint firstItem="gTf-bO-HTe" firstAttribute="bottom" secondItem="73K-MJ-K4z" secondAttribute="bottom" constant="270" id="cDZ-GY-PIi"/>
@@ -398,6 +402,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNr-SL-gyH">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Goals" id="sAM-cV-gP0">
                                         <barButtonItem key="leftBarButtonItem" title="Edit" id="G1g-DB-8da">
@@ -415,7 +420,8 @@
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i28-QW-2hH">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellReuseIdentifier" id="e1u-lF-545">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -424,11 +430,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="i28-QW-2hH" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="2P0-eN-Tfl"/>
                             <constraint firstItem="i28-QW-2hH" firstAttribute="top" secondItem="QNr-SL-gyH" secondAttribute="bottom" id="5bz-hN-53e"/>
@@ -441,7 +448,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Goals" image="Goals" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Goals" image="Goals" id="cPa-gy-q4n">
+                        <color key="badgeColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="editButton" destination="G1g-DB-8da" id="a9s-Dq-bCo"/>
                         <outlet property="tableView" destination="i28-QW-2hH" id="SHr-oW-fGC"/>
@@ -483,7 +492,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZIt-bg-hvQ" firstAttribute="top" secondItem="77U-lC-R6O" secondAttribute="bottom" constant="254" id="Hvy-VM-8b0"/>
                             <constraint firstItem="77U-lC-R6O" firstAttribute="leading" secondItem="w8f-Vl-yx2" secondAttribute="leading" id="KqZ-X7-uxr"/>
@@ -527,7 +536,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Fdz-CY-Ibv"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="wrL-lJ-Omo"/>
@@ -559,7 +568,9 @@
         <scene sceneID="ffQ-3y-Hf6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RWz-eP-ZUH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Meetings" image="Meetings" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Meetings" image="Meetings" id="acW-dT-cKf">
+                        <color key="badgeColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ct2-hI-Ihg">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -580,4 +591,5 @@
         <image name="Meetings" width="37" height="43"/>
         <image name="textFont" width="668" height="334"/>
     </resources>
+    <color key="tintColor" red="0.089082576334476471" green="0.62236946821212769" blue="0.73985809087753296" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
