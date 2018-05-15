@@ -13,8 +13,8 @@
         <array key="Didot.ttc">
             <string>Didot</string>
         </array>
-        <array key="KohinoorBangla.ttc">
-            <string>KohinoorBangla-Regular</string>
+        <array key="KannadaSangamMN.ttc">
+            <string>KannadaSangamMN</string>
         </array>
     </customFonts>
     <scenes>
@@ -523,20 +523,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textFont" translatesAutoresizingMaskIntoConstraints="NO" id="ASE-ur-q0K">
-                                <rect key="frame" x="22" y="65" width="331" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4i-o4-Alb">
-                                <rect key="frame" x="16" y="282" width="343" height="139"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4i-o4-Alb">
+                                <rect key="frame" x="16" y="243" width="343" height="139"/>
                                 <string key="text">Welcome to Peer Tutoring Pal, an app to help you remember all your peer tutoring appointments! Enter your tutor name, location, purpose and date to recieve reminders about your meeting. You can also set goals with your peer tutor and track your progress over the year.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textFont" translatesAutoresizingMaskIntoConstraints="NO" id="ASE-ur-q0K">
+                                <rect key="frame" x="22" y="83" width="331" height="170"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fdz-CY-Ibv" firstAttribute="trailing" secondItem="ASE-ur-q0K" secondAttribute="trailing" constant="22" id="8Hc-Ek-2uE"/>
+                            <constraint firstItem="a4i-o4-Alb" firstAttribute="top" secondItem="Fdz-CY-Ibv" secondAttribute="top" constant="223" id="LVs-Hh-Hne"/>
+                            <constraint firstItem="ASE-ur-q0K" firstAttribute="top" secondItem="Fdz-CY-Ibv" secondAttribute="top" constant="63" id="NSF-M0-5Pp"/>
+                            <constraint firstItem="Fdz-CY-Ibv" firstAttribute="bottom" secondItem="ASE-ur-q0K" secondAttribute="bottom" constant="365" id="aGI-U4-UZ9"/>
+                            <constraint firstItem="Fdz-CY-Ibv" firstAttribute="trailing" secondItem="a4i-o4-Alb" secondAttribute="trailing" constant="16" id="cYq-K2-2Kl"/>
+                            <constraint firstItem="ASE-ur-q0K" firstAttribute="leading" secondItem="Fdz-CY-Ibv" secondAttribute="leading" constant="22" id="vD9-yw-bGC"/>
+                            <constraint firstItem="a4i-o4-Alb" firstAttribute="leading" secondItem="Fdz-CY-Ibv" secondAttribute="leading" constant="16" id="wIt-8P-oqC"/>
+                            <constraint firstItem="Fdz-CY-Ibv" firstAttribute="bottom" secondItem="a4i-o4-Alb" secondAttribute="bottom" constant="236" id="zDF-3J-YJB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fdz-CY-Ibv"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="wrL-lJ-Omo"/>
@@ -552,7 +560,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93963098526000977" green="0.80027651786804199" blue="0.79218047857284546" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.2891291081905365" green="0.61284071207046509" blue="0.72554695606231689" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="RWz-eP-ZUH" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
