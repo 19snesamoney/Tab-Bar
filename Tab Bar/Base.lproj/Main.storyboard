@@ -305,7 +305,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DqE-Zb-ZiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="MeT-vl-3sj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3445.5999999999999" y="219.94002998500753"/>
+            <point key="canvasLocation" x="3784.8000000000002" y="219.94002998500753"/>
         </scene>
         <!--Tutor-->
         <scene sceneID="gVP-jJ-Nxb">
@@ -324,12 +324,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="BOi-ha-6FV" firstAttribute="bottom" secondItem="QHc-W3-WBm" secondAttribute="bottom" constant="270" id="23K-Nz-d5o"/>
-                            <constraint firstItem="BOi-ha-6FV" firstAttribute="trailing" secondItem="QHc-W3-WBm" secondAttribute="trailing" constant="16" id="2Cr-Gw-YID"/>
-                            <constraint firstItem="BOi-ha-6FV" firstAttribute="bottom" secondItem="QHc-W3-WBm" secondAttribute="bottom" constant="270" id="DN6-yS-kmF"/>
-                            <constraint firstItem="QHc-W3-WBm" firstAttribute="top" secondItem="BOi-ha-6FV" secondAttribute="top" constant="254" id="cPq-ln-6uC"/>
-                            <constraint firstItem="QHc-W3-WBm" firstAttribute="top" secondItem="BOi-ha-6FV" secondAttribute="top" constant="254" id="n5M-EG-G8M"/>
-                            <constraint firstItem="QHc-W3-WBm" firstAttribute="leading" secondItem="BOi-ha-6FV" secondAttribute="leading" constant="16" id="qzF-G1-G1f"/>
+                            <constraint firstItem="BOi-ha-6FV" firstAttribute="trailing" secondItem="QHc-W3-WBm" secondAttribute="trailing" constant="16" id="1Gc-5d-QTG"/>
+                            <constraint firstItem="QHc-W3-WBm" firstAttribute="leading" secondItem="BOi-ha-6FV" secondAttribute="leading" constant="16" id="lZ4-BU-FMr"/>
+                            <constraint firstItem="BOi-ha-6FV" firstAttribute="bottom" secondItem="QHc-W3-WBm" secondAttribute="bottom" constant="270" id="pRj-oE-oKC"/>
+                            <constraint firstItem="QHc-W3-WBm" firstAttribute="top" secondItem="BOi-ha-6FV" secondAttribute="top" constant="254" id="ySC-DU-Fej"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BOi-ha-6FV"/>
                     </view>
@@ -347,7 +345,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECY-hC-34V" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="jjU-rg-mKO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4205.6000000000004" y="219.94002998500753"/>
+            <point key="canvasLocation" x="4544.8000000000002" y="219.94002998500753"/>
         </scene>
         <!--Location-->
         <scene sceneID="En4-9k-wYO">
@@ -400,26 +398,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNr-SL-gyH">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <navigationItem title="Goals" id="sAM-cV-gP0">
-                                        <barButtonItem key="leftBarButtonItem" title="Edit" id="G1g-DB-8da">
-                                            <connections>
-                                                <action selector="edit:" destination="8rJ-Kc-sve" id="5Zx-iy-FNb"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fb3-sr-fOi">
-                                            <connections>
-                                                <segue destination="5We-I0-Rzk" kind="presentation" id="Kt3-eB-7Rx"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i28-QW-2hH">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i28-QW-2hH">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -436,21 +417,20 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.96865373849868774" green="0.79141122102737427" blue="0.78972548246383667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="i28-QW-2hH" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="2P0-eN-Tfl"/>
-                            <constraint firstItem="i28-QW-2hH" firstAttribute="top" secondItem="QNr-SL-gyH" secondAttribute="bottom" id="5bz-hN-53e"/>
-                            <constraint firstItem="i28-QW-2hH" firstAttribute="top" secondItem="QNr-SL-gyH" secondAttribute="bottom" id="6jz-N9-6MR"/>
-                            <constraint firstItem="i28-QW-2hH" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="Wqh-eT-15W"/>
-                            <constraint firstItem="QNr-SL-gyH" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="Y3W-IW-zMT"/>
-                            <constraint firstItem="QNr-SL-gyH" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="Zxm-dR-fxR"/>
-                            <constraint firstItem="i28-QW-2hH" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="pRH-js-Ehh"/>
-                            <constraint firstItem="QNr-SL-gyH" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="tja-jp-rVR"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Goals" image="Goals" id="cPa-gy-q4n">
-                        <color key="badgeColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Goals" id="XKj-l3-DYk">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="G1g-DB-8da">
+                            <connections>
+                                <action selector="edit:" destination="8rJ-Kc-sve" id="5Zx-iy-FNb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fb3-sr-fOi">
+                            <connections>
+                                <segue destination="5We-I0-Rzk" kind="show" id="Vt3-cI-zXC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="editButton" destination="G1g-DB-8da" id="a9s-Dq-bCo"/>
                         <outlet property="tableView" destination="i28-QW-2hH" id="SHr-oW-fGC"/>
@@ -458,9 +438,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="799"/>
+            <point key="canvasLocation" x="1090" y="797"/>
         </scene>
-        <!--Add Task View Controller-->
+        <!--New Goal-->
         <scene sceneID="tWo-qt-xtK">
             <objects>
                 <viewController id="5We-I0-Rzk" customClass="AddTaskViewController" customModule="Tab_Bar" customModuleProvider="target" sceneMemberID="viewController">
@@ -468,22 +448,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77U-lC-R6O">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="77U-lC-R6O">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="New Goal" id="nXx-pc-Wtg">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ImM-vT-r2G">
-                                            <connections>
-                                                <segue destination="cr4-Qf-6iU" kind="unwind" unwindAction="unwindCancelNewToDoWithUnwindSegue:" id="A7S-jg-D66"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="klf-Uq-pNj">
-                                            <connections>
-                                                <segue destination="cr4-Qf-6iU" kind="unwind" identifier="save" unwindAction="unwindSaveNewToDoWithUnwindSegue:" id="GpL-um-4Y6"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
                             </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIt-bg-hvQ">
                                 <rect key="frame" x="16" y="318" width="343" height="30"/>
@@ -494,18 +460,20 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZIt-bg-hvQ" firstAttribute="top" secondItem="77U-lC-R6O" secondAttribute="bottom" constant="254" id="Hvy-VM-8b0"/>
-                            <constraint firstItem="77U-lC-R6O" firstAttribute="leading" secondItem="w8f-Vl-yx2" secondAttribute="leading" id="KqZ-X7-uxr"/>
-                            <constraint firstItem="77U-lC-R6O" firstAttribute="trailing" secondItem="w8f-Vl-yx2" secondAttribute="trailing" id="LY1-aT-iUg"/>
-                            <constraint firstItem="77U-lC-R6O" firstAttribute="top" secondItem="w8f-Vl-yx2" secondAttribute="top" id="TnV-Ep-bDw"/>
-                            <constraint firstItem="77U-lC-R6O" firstAttribute="top" secondItem="w8f-Vl-yx2" secondAttribute="top" id="azH-yj-Ec8"/>
-                            <constraint firstItem="ZIt-bg-hvQ" firstAttribute="top" secondItem="77U-lC-R6O" secondAttribute="bottom" constant="254" id="fPc-6w-hLF"/>
-                            <constraint firstItem="ZIt-bg-hvQ" firstAttribute="leading" secondItem="w8f-Vl-yx2" secondAttribute="leading" constant="16" id="ndf-7K-YZl"/>
-                            <constraint firstItem="w8f-Vl-yx2" firstAttribute="trailing" secondItem="ZIt-bg-hvQ" secondAttribute="trailing" constant="16" id="rfq-Zi-RBy"/>
-                            <constraint firstItem="w8f-Vl-yx2" firstAttribute="bottom" secondItem="ZIt-bg-hvQ" secondAttribute="bottom" constant="319" id="vCo-gl-bsK"/>
+                            <constraint firstItem="ZIt-bg-hvQ" firstAttribute="leading" secondItem="w8f-Vl-yx2" secondAttribute="leading" constant="16" id="PXB-E0-lA3"/>
+                            <constraint firstItem="w8f-Vl-yx2" firstAttribute="trailing" secondItem="ZIt-bg-hvQ" secondAttribute="trailing" constant="16" id="hIl-Ym-fQq"/>
+                            <constraint firstItem="ZIt-bg-hvQ" firstAttribute="top" secondItem="77U-lC-R6O" secondAttribute="bottom" constant="254" id="uVw-WN-iFE"/>
+                            <constraint firstItem="w8f-Vl-yx2" firstAttribute="bottom" secondItem="ZIt-bg-hvQ" secondAttribute="bottom" constant="270" id="zz9-52-Qmb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w8f-Vl-yx2"/>
                     </view>
+                    <navigationItem key="navigationItem" title="New Goal" id="nXx-pc-Wtg">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="klf-Uq-pNj">
+                            <connections>
+                                <segue destination="cr4-Qf-6iU" kind="unwind" identifier="save" unwindAction="unwindSaveNewToDoWithUnwindSegue:" id="GpL-um-4Y6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textField" destination="ZIt-bg-hvQ" id="YXI-Sq-e4l"/>
                     </connections>
@@ -513,7 +481,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCo-n1-W2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cr4-Qf-6iU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1487" y="798"/>
+            <point key="canvasLocation" x="2050" y="797"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hja-IN-Alz">
@@ -545,6 +513,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xj1-5u-AEA">
+                                <rect key="frame" x="37" y="497" width="105" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -585,7 +557,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="RWz-eP-ZUH" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="bDb-oM-8px" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="BB0-DB-H6x" kind="relationship" relationship="viewControllers" id="HIY-Bd-ih2"/>
                     </connections>
                 </tabBarController>
@@ -613,6 +585,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPr-kC-zZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1022" y="-206"/>
+        </scene>
+        <!--Goals-->
+        <scene sceneID="4LX-NX-7b5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bDb-oM-8px" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Goals" image="Goals" id="cPa-gy-q4n">
+                        <color key="badgeColor" red="0.96865373850000003" green="0.79141122100000005" blue="0.78972548249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1vx-Qz-k2c">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="VjE-CO-Jep"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1Z-qq-xHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="798"/>
         </scene>
     </scenes>
     <resources>
